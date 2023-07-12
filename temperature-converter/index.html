@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Temperature Converter</h1>
+    </header>
+    <section class="main-section">
+      <div class="convert-from-sec">
+        <div class="conversion-unit-selection-1">
+          <label for="conversion-unit-from">From</label>
+          <select name="conversion-unit-from" id="conversion-unit-from">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+        <div class="conversion-unit-selection-2">
+          <label for="conversion-unit-to">to</label>
+          <select name="conversion-unit-to" id="conversion-unit-to">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+        <input type="number" class="input-data" />
+        <button id="convert">Convert</button>
+      </div>
+      <div class="convert-to-sec">
+        <div class="output-data-div">
+          <label for="output-data">Result</label>
+          <input type="text" name="output-data" class="output-data" />
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
